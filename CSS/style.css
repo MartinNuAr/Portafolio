@@ -1,0 +1,17 @@
+header{text-align: right;}
+    header a{
+        padding: 20px;
+        color:lightpink; 
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+        font-size: 20px; 
+        text-decoration: none; 
+        background-color: rgb(175, 17, 17); 
+        border-radius: 20%;
+        }
+    body{
+        color: rgb(175, 17, 17); 
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+    body{
+        background-color: lightpink;
+    }
+    #Presentación{text-align: center; padding-top: 1em;}
