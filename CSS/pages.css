@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'Share Tech Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/share-tech-mono-v15-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/share-tech-mono-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/share-tech-mono-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/share-tech-mono-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/share-tech-mono-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/share-tech-mono-v15-latin-regular.svg#ShareTechMono') format('svg'); /* Legacy iOS */
+  }
+
+
+
+  @media (max-width: 576px) {
+    .btn {
+      font-size:11px;
+      padding:4px 6px;
+      }
+      nav li{
+          display: flex;
+          justify-content: center;
+      }
+  
+    .card{
+      font-size: 10px;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .btnNav{
+      width: 120px;
+    }
+  }
+
+@media (min-width: 576px) {
+    .btn {
+      font-size:12px;
+      padding:6px 12px;
+      align-items: center;
+    }
+
+    .card-title{
+      font-size: 38px;
+    }
+
+    .card-text{
+      font-size: 18px;
+    }
+
+    .container{
+      justify-content: center;
+    }
+
+    .btnNav{
+      width: 150px;
+    }
+  }
+  
+@media (min-width: 768px) {
+    .btn {
+      font-size:12px;
+      padding:6px 12px;
+    }
+  }
+  
+@media (min-width: 992px) {
+    .btn {
+      font-size:14px;
+      padding:8px 12px;
+    }
+
+    .card h5{
+      font-size: 30px;
+    }
+  }
+  
+@media (min-width: 1200px) {
+    .btn {
+      padding:10px 16px;
+      font-size:18px;
+    }
+
+    .btnNav{
+      width: 200px;
+    }
+
+}
+
+
+      
+header{
+              padding: 20px;
+              color:black;
+      }
+      
+body{
+          color: white; 
+          font-family: 'Share Tech Mono';
+          background-color: black;
+      }
+      
+body h2{
+          text-align: center;
+          padding: 1.5em;
+      }
+
+body p{
+          font-size: 1.5em;
+          padding: 2em;
+      }
+
+#Presentación{
+          text-align: center; 
+          padding-top: 1em;
+      }
+
+footer{
+          text-align: center;
+      }
+
+footer hr{
+        border-color: white;
+      }
+
+.card{
+  text-align: center;
+  background-color: black;
+}
+
+.card li{
+  text-align: justify;
+}
+
+.card:hover{
+  filter: invert(100);
+}
+
+.card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  padding: 1em;
+}
+
+/* Comienza spinner  */
+
+.self-building-square-spinner, .self-building-square-spinner * {
+  box-sizing: border-box;
+}
+
+.self-building-square-spinner {
+  height: 160px;
+  width: 160px;
+  top: calc( -40px * 2 / 3);
+}
+
+.self-building-square-spinner .square {
+  height: 40px;
+  width: 40px;
+  top: calc( -40px * 2 / 3);
+  margin-right: calc(40px / 3);
+  margin-top: calc(40px / 3);
+  background: #FFFFFF;
+  float: left;
+  position:relative;
+  opacity: 0;
+  animation: self-building-square-spinner 6s infinite;
+}
+
+.self-building-square-spinner .square:nth-child(1) {
+  animation-delay: calc(300ms * 6);
+}
+
+.self-building-square-spinner .square:nth-child(2) {
+  animation-delay: calc(300ms * 7);
+}
+
+.self-building-square-spinner .square:nth-child(3) {
+  animation-delay: calc(300ms * 8);
+}
+
+.self-building-square-spinner .square:nth-child(4) {
+  animation-delay: calc(300ms * 3);
+}
+
+.self-building-square-spinner .square:nth-child(5) {
+  animation-delay: calc(300ms * 4);
+}
+
+.self-building-square-spinner .square:nth-child(6) {
+  animation-delay: calc(300ms * 5);
+}
+
+.self-building-square-spinner .square:nth-child(7) {
+  animation-delay: calc(300ms * 0);
+}
+
+.self-building-square-spinner .square:nth-child(8) {
+  animation-delay: calc(300ms * 1);
+}
+
+.self-building-square-spinner .square:nth-child(9) {
+  animation-delay: calc(300ms * 2);
+}
+
+.self-building-square-spinner .clear{
+  clear: both;
+}
+
+@keyframes self-building-square-spinner {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+    top: 0;
+  }
+  50.9% {
+    opacity: 1;
+    top: 0;
+  }
+  55.9% {
+    opacity: 0;
+    top: inherit;
+  }
+}
+
+/* Termina spinner */
+
+.alert-light{
+  background-color: black;
+  color: #FFFFFF;
+}

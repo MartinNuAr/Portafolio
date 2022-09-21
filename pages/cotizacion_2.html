@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotización | Martín Núñez</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/pages.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="../index.html"
+                            class="btn btn-responsive btn-lg btn-outline-light mr-2 btnNav">Inicio</a>
+                    </li>
+                    <br />
+                    <li class="nav-item">
+                        <a href="./contacto.html"
+                            class="btn btn-responsive btn-lg btn-outline-light mr-2 btnNav">Contáctame</a>
+                    </li>
+                    <br />
+                    <li class="nav-item">
+                        <a href="../index.html#Proyectos" class="btn btn-responsive btn-lg btn-outline-light mr-2 btnNav">Mis
+                            proyectos</a>
+                    </li>
+                    <br />
+                    <li class="nav-item">
+                        <a href="./cotizacion.html" class="btn btn-responsive btn-lg btn-outline-light mr-2 btnNav">Trabaja conmigo</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <h1 style="text-align: center; padding: 10px; padding-top: 40px;">Cotización personalizada</h1>
+    <h2 style="text-align: center; padding: 10px;">Selecciona las opciones que sean más adecuadas a tus necesidades.</h2>
+    <main class="container">
+        <form>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="tipoWebsite">Tipo de website</label>
+                    <select class="custom-select" id="tipoWebsite" aria-describedby="tipoWebsiteFeedback" required>
+                      <option selected disabled value="">Elige una opción</option>
+                      <option value="4000">E-commerce</option>
+                      <option value="1000">Blog</option>
+                      <option value="7000">Corporativo</option>
+                      <option value="10000">Otro</option>
+                    </select>
+                    <div id="tipoWebsiteFeedback" class="invalid-feedback">
+                      Selecciona una opción de la lista
+                    </div>
+                  </div>
+                <div class="col-md-6 mb-3">
+                    <label for="numSecciones">Número de secciones (1-50)</label>
+                    <input type="number" min="1" max="50" class="form-control" value="1" id="numSecciones"
+                        aria-describedby="numSeccionesFeedback" required>
+                </div>
+                <div id="numSeccionesFeedback" class="invalid-feedback">
+                    Favor de poner un número del 1 al 50
+                  </div>
+            </div>
+            <h3>Servicios</h3>
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <div class="form-check">
+                            <input name="check" class="form-check-input" type="checkbox" value="1000" id="checkHosting"
+                                aria-describedby="checkHostingFeedback" required>
+                            <label class="form-check-label" for="checkHosting">
+                                Hosting
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input name="check" class="form-check-input" type="checkbox" value="1000" id="checkMantenimiento"
+                                aria-describedby="checkMantenimientoFeedback" required>
+                            <label class="form-check-label" for="checkMantenimiento">
+                                Mantenimiento
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input name="check" class="form-check-input" type="checkbox" value="500" id="checkCompras"
+                                aria-describedby="checkComprasFeedback" required>
+                            <label class="form-check-label" for="checkCompras">
+                                Lista de compras
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="form-check">
+                            <input name="check" class="form-check-input" type="checkbox" value="500" id="checkDom"
+                                aria-describedby="checkDomFeedback" required>
+                            <label class="form-check-label" for="checkDom">
+                                Dominio
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input name="check" class="form-check-input" type="checkbox" value="750" id="checkDiseño"
+                                aria-describedby="invalidCheck3Feedback" required>
+                            <label class="form-check-label" for="checkDiseño">
+                                Diseño responsivo
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input name="check" class="form-check-input" type="checkbox" value="250" id="checkLinks"
+                                aria-describedby="invalidCheck3Feedback" required>
+                            <label class="form-check-label" for="checkLinks">
+                                Enlaces a redes
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="form-check">
+                            <input name="check" class="form-check-input" type="checkbox" value="700" id="checkEmail"
+                                aria-describedby="invalidCheck3Feedback" required>
+                            <label class="form-check-label" for="checkEmail">
+                                Servicio de e-mail
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input name="check" class="form-check-input" type="checkbox" value="500" id="checkLayout"
+                                aria-describedby="invalidCheck3Feedback" required>
+                            <label class="form-check-label" for="checkLayout">
+                                Layout
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input name="check" class="form-check-input" type="checkbox" value="550" id="checkForms"
+                                aria-describedby="invalidCheck3Feedback" required>
+                            <label class="form-check-label" for="checkForms">
+                                Formularios de registro/contacto
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="btnSubmit" class=" btn btn-lg btn-outline-light" type="submit" style="width: 150px; height: 60px; font-size:x-large;">Cotiza</button>
+          </form>
+          <div id="alertTotal">
+
+          </div>
+    </main>
+    <footer>
+        <h2>Sígueme en redes</h2>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col col-2"><a href="https://www.linkedin.com/in/martinnuar/"><img
+                            class="img-responsive d-block mx-auto" src="../src/linkeinIcon.png" alt="Logo de LinkedIn"
+                            width="48px" height="48px"></a></div>
+                <div class="col col-2"><a href="https://github.com/MartinNuAr"><img img-responsive d-block mx-auto
+                            src="../src/githubIcon.png" alt="Logo de GitHub" width="48px" height="48px"></a></div>
+                <div class="col col-2"><a href="https://twitter.com/MartinNuAr"><img img-responsive d-block mx-auto
+                            src="../src/twitterIcon.png" alt="Logo de Twitter" width="48px" height="48px"></a></div>
+            </div>
+        </div>
+        <hr />
+        <h6 style="font-size: 1.5em;">Hecho por Juan Martín Núñez Aréchiga &#169 2022</h6>
+    </footer>
+    <script src="../JS/cotizacion_2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
