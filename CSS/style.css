@@ -1,17 +1,108 @@
-header{text-align: right;}
-    header a{
-        padding: 20px;
-        color:lightpink; 
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-        font-size: 20px; 
-        text-decoration: none; 
-        background-color: rgb(175, 17, 17); 
-        border-radius: 20%;
-        }
-    body{
-        color: rgb(175, 17, 17); 
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
-    body{
-        background-color: lightpink;
-    }
-    #Presentación{text-align: center; padding-top: 1em;}
+@font-face {
+  font-family: 'Share Tech Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/share-tech-mono-v15-latin-regular.eot');
+  /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/share-tech-mono-v15-latin-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/share-tech-mono-v15-latin-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/share-tech-mono-v15-latin-regular.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/share-tech-mono-v15-latin-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/share-tech-mono-v15-latin-regular.svg#ShareTechMono') format('svg');
+  /* Legacy iOS */
+}
+
+header {
+  padding: 20px;
+  color: black;
+}
+
+body {
+  color: white;
+  font-family: 'Share Tech Mono';
+  background-color: black;
+}
+
+body h2 {
+  text-align: center;
+  padding: 1.5em;
+}
+
+body p {
+  font-size: 1.5em;
+  padding: 2em;
+}
+
+#Presentación {
+  text-align: center;
+  padding-top: 1em;
+}
+
+footer {
+  text-align: center;
+}
+
+footer hr {
+  border-color: white;
+}
+
+@media (max-width: 576px) {
+  .btn {
+    font-size: 11px;
+    padding: 4px 6px;
+  }
+  nav li {
+    display: flex;
+    justify-content: center;
+  }
+  .btnNav{
+    width: 120px;
+  }
+  #photoMarto{
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 576px) {
+  .btn {
+    font-size: 12px;
+    padding: 6px 12px;
+    align-items: center;
+  }
+
+  .btnNav {
+    width: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .btn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .btn {
+    padding: 10px 16px;
+    font-size: 18px;
+  }
+
+  .btnNav {
+    width: 200px;
+  }
+}
